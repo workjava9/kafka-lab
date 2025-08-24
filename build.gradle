@@ -10,17 +10,17 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'io.spring.dependency-management'  // <— важно
+    apply plugin: 'io.spring.dependency-management'
 
     java {
         toolchain { languageVersion = JavaLanguageVersion.of(17) }
     }
-
     test { useJUnitPlatform() }
 
-    dependencies {
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
-        testImplementation 'org.junit.vintage:junit-vintage-engine'
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.boot:spring-boot-dependencies:3.3.2"
+            mavenBom "org.testcontainers:testcontainers-bom:1.19.8"
+        }
     }
-
 }
