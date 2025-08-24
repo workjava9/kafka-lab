@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.lab.consumer.EventsMetricsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-24T15:59:13.179Z" hostname="MacBook-Pro-Shad0wX7.local" time="0.009">
-  <properties/>
-  <testcase name="incrementsCounters" classname="dev.lab.consumer.EventsMetricsTest" time="0.009"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
