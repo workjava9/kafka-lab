@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: analytics-consumer
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: analytics
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+topic:
+  user-events: user.events
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus

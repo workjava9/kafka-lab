@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kafka-lab.analytics-consumer" options="-parameters" />
+      <module name="kafka-lab.analytics-consumer.main" options="-parameters" />
+      <module name="kafka-lab.analytics-consumer.test" options="-parameters" />
+      <module name="kafka-lab.user-events-producer" options="-parameters" />
+      <module name="kafka-lab.user-events-producer.main" options="-parameters" />
+      <module name="kafka-lab.user-events-producer.test" options="-parameters" />
+    </option>
+  </component>
+</project>
